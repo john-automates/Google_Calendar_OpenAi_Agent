@@ -6,10 +6,11 @@ import json
 from dateutil.parser import parse
 from gcsa.event import Event
 import pytz
+import os
 
 
 CREDENTIALS_PATH = "credentials.json"
-EMAIL = "johnrobgillis@gmail.com"
+EMAIL = os.environ['EMAIL']
 
 current_date = datetime.datetime.now().date().strftime('%Y-%m-%d')  # Format as 'YYYY-MM-DD'
     
